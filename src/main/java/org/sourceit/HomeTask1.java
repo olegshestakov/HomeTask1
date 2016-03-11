@@ -12,8 +12,8 @@ public class HomeTask1 {
      */
     public static boolean isEven(int number) {
         if(number>0) {
-            boolean b = (number % 2 == 0 ? true : false);
-            return b;
+            boolean a = (number % 2 == 0 ? true : false);
+            return a;
         }else{
             return false;
         }
