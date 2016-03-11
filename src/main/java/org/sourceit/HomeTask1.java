@@ -2,7 +2,7 @@ package org.sourceit;
 
 public class HomeTask1 {
     public static void main(String[] args) {
-        System.out.println(isEven(1));
+        System.out.println(  fibonacci(2));
     }
     /**
      * Проверить, является ли число четным.
@@ -101,13 +101,24 @@ public class HomeTask1 {
      * @return сумма цифр.
      */
     public static long calculateSum(long number) {
-        number=(number<0? number*-1:number);
+        int y=0;
+        if(number<0){
+            y=1;
+            number=number*-1;
+        }else{
+            y=0;
+        }
         int sum=0;
         while (number>0){
             sum+=number%10;
             number/=10;
         }
-        return sum;
+        if(y==0){
+            return sum;
+        }else{
+            return sum;
+        }
+
     }
 
     /**
@@ -122,16 +133,16 @@ public class HomeTask1 {
         int a1=1;
         int a2=1;
         int f=0;
-        for(int i=3;i<=till;i++){
+        for(int i=2;i<=till;i++){
             f=0;
             f=a1+a2;
             a1=a2;
             a2=f;
         }
-        if((till<3)&(till>0)){
+        if((till<2)&(till>0)){
             f=a1;
         }else if(till<0){
-            f=0000;
+            f=1;
         }
 
         return f;
