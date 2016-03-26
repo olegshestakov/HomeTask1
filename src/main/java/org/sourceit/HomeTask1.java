@@ -1,9 +1,6 @@
 package org.sourceit;
 
 public class HomeTask1 {
-    public static void main(String[] args) {
-        System.out.println(  fibonacci(2));
-    }
     /**
      * Проверить, является ли число четным.
      *
@@ -139,7 +136,7 @@ public class HomeTask1 {
             a1=a2;
             a2=f;
         }
-        if((till<2)&(till>0)){
+        if(till<2){
             f=a1;
         }else if(till<0){
             f=1;
