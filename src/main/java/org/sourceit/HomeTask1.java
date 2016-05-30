@@ -8,12 +8,7 @@ public class HomeTask1 {
      * @return является ли число четным.
      */
     public static boolean isEven(int number) {
-        if(number>0) {
-            boolean a = (number % 2 == 0 ? true : false);
-            return a;
-        }else{
-            return false;
-        }
+        return number % 2 == 0;
     }
 
     /**
@@ -26,12 +21,10 @@ public class HomeTask1 {
      * @return значение гипотенузы.
      */
     public static double findHypotenuse(double a, double b) {
-        if((a>0)&&(b>0)){
-            double c=Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
-            return c;
-        }else{
-            return 0;
+        if(a < 0 || b < 0) {
+            return 0d;
         }
+        return Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
     }
 
     /**
@@ -43,12 +36,11 @@ public class HomeTask1 {
      * @return периметр треугольника.
      */
     public static double perimeter(double a, double b, double c) {
-        if(a>0&b>0&c>0){
-            double p= a+b+c;
-            return p;
-        }else{
+        if (a < 0 || b < 0 || c < 0) {
             return 0;
         }
+
+        return a+b+c;
     }
 
     /**
@@ -76,17 +68,8 @@ public class HomeTask1 {
      * @return сгенерированное число.
      */
     public static int generateNumberFromRange(int min, int max) {
-        if(min<max){
             int y=max-min;
-            int g=min+((int)(Math.random()*(y+1)));
-            return g;
-        }else if(min>max){
-            int y=min-max;
-            int g=max+((int)(Math.random()*(y+1)));
-            return g;
-        }else{
-            return min;
-        }
+            return min+((int)(Math.random()*(y+1)));
     }
 
     /**
@@ -165,10 +148,6 @@ public class HomeTask1 {
                 ticket/=10;
             }
         }
-        if(left==right){
-            return true;
-        }else{
-            return false;
-        }
+        return left==right;
     }
 }
