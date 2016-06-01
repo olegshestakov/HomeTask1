@@ -30,7 +30,7 @@ public class HomeTaskTest1 {
     public void testFindHypotenuseNegativeA() {
         Assert.assertEquals(HomeTask1.findHypotenuse(-1, 4), 0D);
     }
-
+//
     @Test
     public void testFindHypotenuseNegativeB() {
         Assert.assertEquals(HomeTask1.findHypotenuse(4, -1), 0D);
