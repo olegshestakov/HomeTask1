@@ -6,7 +6,7 @@ import org.testng.Assert;
 public class HomeTaskTest1 {
 
     /**
-     * Tests on isEven method
+     * Tests on isEven method1
      */
     @Test
     public void testIsEvenOnOdd() {
