@@ -45,7 +45,7 @@ public class HomeTaskTest1 {
     }
 
     /**
-     * Tests on area method
+     * Tests on area method1
      */
     @Test
     public void testAreaNegativeA() {
