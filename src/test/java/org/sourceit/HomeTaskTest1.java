@@ -6,7 +6,7 @@ import org.testng.Assert;
 public class HomeTaskTest1 {
 
     /**
-     * Tests on isEven method
+     * Tests on isEven method1123111
      */
     @Test
     public void testIsEvenOnOdd() {
@@ -30,7 +30,7 @@ public class HomeTaskTest1 {
     public void testFindHypotenuseNegativeA() {
         Assert.assertEquals(HomeTask1.findHypotenuse(-1, 4), 0D);
     }
-
+//
     @Test
     public void testFindHypotenuseNegativeB() {
         Assert.assertEquals(HomeTask1.findHypotenuse(4, -1), 0D);
@@ -45,7 +45,7 @@ public class HomeTaskTest1 {
     }
 
     /**
-     * Tests on area method
+     * Tests on area method111
      */
     @Test
     public void testAreaNegativeA() {
@@ -59,7 +59,7 @@ public class HomeTaskTest1 {
 
     @Test
     public void testArea() {
-        Assert.assertEquals(Math.round(HomeTask1.area(4, 3)), 78);
+        Assert.assertEquals(Math.round(HomeTask1.area(4, 3)), 6);
     }
 
     /**
